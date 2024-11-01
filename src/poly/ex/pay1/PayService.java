@@ -1,9 +1,11 @@
 package poly.ex.pay1;
 
+import poly.ex.pay0K.KakaoPay;
+import poly.ex.pay0K.NaverPay;
+
 public class PayService {
 
     public void processPay(String option, int amount) {
-
         System.out.println("결제를 시작합니다: option=" + option + ", amount=" + amount);
 
         Pay pay = PayStore.findPay(option);
@@ -15,5 +17,4 @@ public class PayService {
             System.out.println("결제가 실패했습니다.");
         }
     }
-
 }
