@@ -1,10 +1,10 @@
 package static1;
 
-public class Data3 {
+public class Data1 {
     public String name;
-    public static int count; // static
+    public int count;
 
-    public Data3(String name) {
+    public Data1(String name) {
         this.name = name;
         count++;
     }
